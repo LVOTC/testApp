@@ -44,7 +44,8 @@ operations = [
     console.log(this.transformdate);
             // this.user.date = this.transformdate;
             // console.log(this.user);
-            //cash out natural
+
+            //cash out natural api reikes komisiniu skaiciavimui ir is cia pasiims savaites limito suma bei komisiniu dydi
     this.http.get('http://private-38e18c-uzduotis.apiary-mock.com/config/cash-out/natural').subscribe(cashOutApiNatural => {
       this.cashOutApiNatural = cashOutApiNatural;
       console.log(this.cashOutApiNatural);
@@ -54,7 +55,7 @@ operations = [
       this.cashOutApijuridical = cashOutApijuridical;
       console.log(this.cashOutApijuridical);
     });
-    // cash in
+    // cash in api pasiima komisinius uz nusiimima ir max komisinsius kiek maximaliai gali kainuoti
     this.http.get('http://private-38e18c-uzduotis.apiary-mock.com/config/cash-in').subscribe(cashInApi => {
         this.cashInApi = cashInApi;
         console.log(this.cashInApi);
