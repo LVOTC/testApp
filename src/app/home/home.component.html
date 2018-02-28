@@ -1,0 +1,17 @@
+
+<div class="">
+  <label for="">Pinigu inesimas EUR</label>
+  <input type="text" name="" value="">
+  <p>The time is {{currentDate | date:'yyyy-MM-dd'}}</p>
+  <button type="button" (click)="checkTransaction()" name="button">checkCashOut</button>
+  <button type="button" (click)="usersById()" name="button">usersById</button>
+  <button type="button" (click)="usersOperations()" name="button">usersOperations</button>
+
+  <div *ngFor="let key of result" class="">
+    {{ key }}
+  </div>
+  <!-- <div *ngFor="let keys in user.user_id" class="">
+    {{ keys }}
+  </div> -->
+
+</div>
